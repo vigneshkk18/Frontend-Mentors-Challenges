@@ -1,0 +1,125 @@
+:root {
+  /* sizes */
+  --size-sm: 375px;
+  --size-lg: 1440px;
+
+  /* colors */
+  --primary: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --light-grey: hsl(0, 0%, 25%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  font-size: 14px;
+  font-family: "Inter", serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: var(--off-black);
+  color: var(--white);
+}
+
+.profile-card {
+  background-color: var(--dark-grey);
+  padding: 36px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 375px) {
+  .profile-card {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 24px;
+  }
+}
+
+.profile-card__avatar__image {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.profile-card__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.profile-card__user-info__name {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-card__user-info__place {
+  color: var(--primary);
+}
+
+.profile-card__job-description {
+  color: var(--white);
+  opacity: 0.7;
+}
+
+.profile-card__social-media-links {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.profile-card__social-media-link {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--grey);
+  text-align: center;
+  color: var(--white);
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+}
+
+.profile-card__social-media-link:hover {
+  background-color: var(--light-grey);
+}
+
+.profile-card__social-media-link:focus-visible {
+  background-color: var(--light-grey);
+  outline: var(--white) auto 1px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  color: var(--white)
+}

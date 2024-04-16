@@ -1,0 +1,156 @@
+:root {
+  --size-sm: 375px;
+  --size-lg: 1440px;
+
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+}
+
+html {
+  height: 100dvh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+
+  background-color: var(--light-pink);
+
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 25%;
+
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 375px) {
+  .background {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
+}
+
+.faq {
+  width: 600px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 700px) {
+  .faq {
+    width: 90%;
+  }
+}
+
+.faq__hero {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.faq__hero img {
+  width: 35px;
+  height: 35px;
+}
+
+.faq__hero__title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accordion__item__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.accordion__item__summary__title {
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.accordion__item__summary__toggle {
+  margin: 16px 0px;
+  border: 0px;
+  padding: 0px;
+  height: max-content;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.accordion__item__summary__toggle__open,
+.accordion__item__summary__toggle__closed {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.accordion__item[data-open="false"] .accordion__item__summary__toggle__closed {
+  display: block;
+}
+
+.accordion__item[data-open="true"] .accordion__item__summary__toggle__open {
+  display: block;
+}
+
+.accordion__item__detail {
+  opacity: 0.6;
+  font-size: 16px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.26s ease;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

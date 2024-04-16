@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="balance-group">
+      <div class="balance-info">
+        <span class="title">My balance</span>
+        <span class="price">$921.48</span>
+      </div>
+      <div class="balance-icon">
+        <span class="outlined"></span>
+        <span class="filled"></span>
+      </div>
+    </div>
+    <div class="chart-group">
+      <h3 class="chart-title">Spending - Last 7 days</h3>
+      <div class="chart">
+        <div data-id="mon" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">mon</div>
+        </div>
+        <div data-id="tue" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">tue</div>
+        </div>
+        <div data-id="wed" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">wed</div>
+        </div>
+        <div data-id="thu" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">thu</div>
+        </div>
+        <div data-id="fri" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">fri</div>
+        </div>
+        <div data-id="sat" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">sat</div>
+        </div>
+        <div data-id="sun" class="chart-item">
+          <div class="chart-bar"></div>
+          <div class="chart-bar-label">sun</div>
+        </div>
+      </div>
+      <hr />
+      <div class="chart-info">
+        <div class="month-info">
+          <span class="text">Total this month</span>
+          <h3 class="monthly-expense">$478.33</h3>
+        </div>
+        <div class="expense-stat">
+          <span class="expense-stat-percent">+2.4%</span>
+          <span class="text">from last month</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vignesh K K</a>.
+  </div>
+</body>
+
+</html>
