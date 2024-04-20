@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="notification-card">
+    <div class="notification-title-row">
+      <div class="notification-block">
+        <h4>Notifications</h4>
+        <span data-identifier="notificationCountBadge" class="notification-count-badge">3</span>
+      </div>
+      <button data-identifier="markAllAsRead" class="text-button">
+        Mark all as read 
+      </button>
+    </div>
+    <div class="notification-body">
+      <div class="notification-item">
+        <div class="notification-info-group">
+          <img class="avatar" src="/notifications-page-main/assets/images/avatar-mark-webber.webp" />
+          <div class="user-info">
+            <div class="notification">
+              <span class="author-name">Mark Webber&nbsp;</span>
+              <span class="type">reacted to your recent post&nbsp;</span>
+              <span class="target post">My first tournament today!&nbsp;</span>
+              <span class="unread-badge"></span>
+            </div>
+            <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">1m ago</time>
+          </div>
+        </div>
+      </div>
+      <div class="notification-item">
+        <div class="notification-info-group">
+          <img class="avatar" src="/notifications-page-main/assets/images/avatar-angela-gray.webp" />
+          <div class="user-info">
+            <div class="notification">
+              <span class="author-name">Angela Gray&nbsp;</span>
+              <span class="type">followed you&nbsp;</span>
+              <span class="unread-badge"></span>
+            </div>
+            <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">5m ago</time>
+          </div>
+        </div>
+      </div>
+      <div class="notification-item">
+        <div class="notification-info-group">
+          <img class="avatar" src="/notifications-page-main/assets/images/avatar-jacob-thompson.webp" />
+          <div class="user-info">
+            <div class="notification">
+              <span class="author-name">Jacob Thompson&nbsp;</span>
+              <span class="type">has joined your group&nbsp;</span>
+              <span class="target club">Chess Club&nbsp;</span>
+              <span class="unread-badge"></span>
+            </div>
+            <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">1 day ago</time>
+          </div>
+        </div>
+      </div>
+      <div class="notification-item">
+        <div class="notification-info-group">
+          <img class="avatar" src="/notifications-page-main/assets/images/avatar-rizky-hasanuddin.webp" />
+          <div class="user-info">
+            <div class="notification">
+              <span class="author-name">Rizky Hasanuddin&nbsp;</span>
+              <span class="type">sent you a private message&nbsp;</span>
+              <span class="target post">My first tournament today!&nbsp;</span>
+            </div>
+            <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">5 days ago</time>
+          </div>
+        </div>
+        <p class="notification-text">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+  I'm already having lots of fun and improving my game.
+        </p>
+      </div>
+      <div class="notification-item">
+        <div class="notification-info-group-wrapper">
+          <div class="notification-info-group">
+            <img class="avatar" src="/notifications-page-main/assets/images/avatar-kimberly-smith.webp" />
+            <div class="user-info">
+              <div class="notification">
+                <span class="author-name">Kimberly Smith&nbsp;</span>
+                <span class="type">commented on your picture&nbsp;</span>
+              </div>
+              <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">1 week ago</time>
+            </div>
+          </div>
+          <img class="image-commented" src="/notifications-page-main/assets/images/image-chess.webp" />
+        </div>
+      </div>
+      <div class="notification-item">
+        <div class="notification-info-group">
+          <img class="avatar" src="/notifications-page-main/assets/images/avatar-nathan-peterson.webp" />
+          <div class="user-info">
+            <div class="notification">
+              <span class="author-name">Nathan Peterson&nbsp;</span>
+              <span class="type">reacted to your recent post&nbsp;</span>
+              <span class="target post">5 end-game strategies to increase your win rate&nbsp;</span>
+            </div>
+            <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">2 weeks ago</time>
+          </div>
+        </div>
+      </div>
+      <div class="notification-item">
+        <div class="notification-info-group">
+          <img class="avatar" src="/notifications-page-main/assets/images/avatar-anna-kim.webp" />
+          <div class="user-info">
+            <div class="notification">
+              <span class="author-name">Anna Kim&nbsp;</span>
+              <span class="type">left the group&nbsp;</span>
+              <span class="target club">Chess Club&nbsp;</span>
+            </div>
+            <time datetime="Sat, 20 Apr 2024 04:25:34 GMT" class="notification-time">2 weeks ago</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="/notifications-page-main/script.js" />
+</body>
+</html>
